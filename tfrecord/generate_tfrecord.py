@@ -31,10 +31,10 @@ FLAGS = flags.FLAGS
 def class_text_to_int(row_label):     
     if row_label == 'figure':
         return 1
-    elif row_label == 'Table':
-        return 2
-    elif row_label == 'formula':
-        return 3
+#     elif row_label == 'Table':
+#         return 2
+#     elif row_label == 'formula':
+#         return 3
     else:
         return 0
 
