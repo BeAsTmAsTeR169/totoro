@@ -36,7 +36,7 @@ def class_text_to_int(row_label):
     elif row_label == 'formula':
         return 3
     else:
-        return 4
+        None
 
 
 def split(df, group):
