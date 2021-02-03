@@ -29,6 +29,7 @@ FLAGS = flags.FLAGS
 
 # TO-DO replace this with label map
 def class_text_to_int(row_label):
+    print(row_label)      
     if row_label == 'figure':
         return 1
     elif row_label == 'Table':
@@ -36,7 +37,7 @@ def class_text_to_int(row_label):
     elif row_label == 'formula':
         return 3
     else:
-        None
+        return 0
 
 
 def split(df, group):
@@ -69,7 +70,7 @@ def create_tf_example(group, path):
         classes_text.append(row['class'].encode('utf8'))
         classes.append(class_text_to_int(row['class']))
     
-    ptint(classes)
+#     ptint(classes)
     tf_example = tf.train.Example(features=tf.train.Features(feature={
         'image/height': dataset_util.int64_feature(height),
         'image/width': dataset_util.int64_feature(width),
