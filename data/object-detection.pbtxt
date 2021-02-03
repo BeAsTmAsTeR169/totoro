@@ -7,11 +7,4 @@ item {
     name:'figure'
 }
 
-item {
-    id: 2
-    name: 'Table'
-}
-item {
-    id: 3
-    name: 'formula'
-}
+
