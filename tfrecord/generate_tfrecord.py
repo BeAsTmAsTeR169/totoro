@@ -38,7 +38,7 @@ def class_text_to_int(row_label):
     # elif row_label == 'kk':
         return 3
     else:
-        0
+        return 0
 
 
 def split(df, group):
